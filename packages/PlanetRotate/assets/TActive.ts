@@ -84,6 +84,7 @@ export function text(moon: any, earth: any) {
   console.log("center", center.x, center.y, center.z);
   const clock = new Clock();
   function render() {
+    console.log("111");
     //自转
     var axis = new Vector3(0, 1, 0);
     earth.rotateOnAxis(axis, Math.PI / 100);

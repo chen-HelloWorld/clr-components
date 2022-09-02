@@ -62,19 +62,19 @@ export default defineComponent({
       groupPromise.then((group) => {
         console.log("group", group);
         text(group.children[1], group.children[0]);
-        group.children.forEach((element: any, index: number) => {
-          // if (index === 0) {
-          //   //  地球自转
-          //   // rotation(element, 0.01, "Y");
-          //   // revolution(element, 0.4, 0.3, 100 - 10 * index);
-          //   //rotateOnAxis 在局部空间中绕着该物体的轴来旋转一个物体
-          //   var axis = new Vector3(0, 0, 0);
-          //   element.rotateOnAxis(axis, 0.03);
-          // }
-          // //月球围着地球公转
-          // else if (index === 1) {
-          // }
-        });
+        // group.children.forEach((element: any, index: number) => {
+        //   // if (index === 0) {
+        //   //   //  地球自转
+        //   //   // rotation(element, 0.01, "Y");
+        //   //   // revolution(element, 0.4, 0.3, 100 - 10 * index);
+        //   //   //rotateOnAxis 在局部空间中绕着该物体的轴来旋转一个物体
+        //   //   var axis = new Vector3(0, 0, 0);
+        //   //   element.rotateOnAxis(axis, 0.03);
+        //   // }
+        //   // //月球围着地球公转
+        //   // else if (index === 1) {
+        //   // }
+        // });
         TE.addObject(...group.children);
       });
     });
